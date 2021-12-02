@@ -18,6 +18,27 @@ namespace MCD_KalıtımNedir
              * Nesne örneği alınan öğrenci nesnesi aslında object tipinden türetilmiş bir nesnedir.
              */
 
+            
+            //temelTip T1 = new temelTip();
+            //T1.TemelTipMetot1();
+            //Console.WriteLine("---------------------------------");
+            Egitmen E1 = new Egitmen();
+            //Console.WriteLine("Eğitmen nesnesi örneklendi.");
+            //E1.TemelTipMetot1();
+            
+
+            // Özel tiplerde Boxing ve Unboxing 
+
+            //Bizim object nesnemiz nedir? => TemelTip
+            temelTip T2;
+            //Hangi nesnelerde temelTip object görevi görür?
+            //Personel,Egitmen,Ogrenci.
+            //TemelTip nesnesinden türedikleri için temelTip nesnesi bu nesnelerde object gibi davranır.
+
+            T2 = E1; // Eğitmen nesnesini TemelTip nesnesine atadık.
+            E1 = (Egitmen)T2; // Unboxing
+
+            Console.ReadKey();
         }
     }
 }

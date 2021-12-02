@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MCD_KalıtımNedir
 {
-    public class Personel
+    public class Personel:temelTip 
     {
         public DateTime IsBaslangicTarih { get; set; }
         public DateTime IsBitisTarih { get; set; }
