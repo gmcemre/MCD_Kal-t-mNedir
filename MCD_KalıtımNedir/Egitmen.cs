@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MCD_KalıtımNedir
 {
-    public class Egitmen:temelTip 
+    public sealed  class Egitmen:temelTip 
     {
         public string  Brans { get; set; }
         public int BransSeviye { get; set; }
