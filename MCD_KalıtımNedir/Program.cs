@@ -38,6 +38,19 @@ namespace MCD_KalıtımNedir
             T2 = E1; // Eğitmen nesnesini TemelTip nesnesine atadık.
             E1 = (Egitmen)T2; // Unboxing
 
+            Personel P1 = new Personel();
+            T2 = P1; // PErsonel nesnesini Temeltip nesnesine atadık.
+
+            P1 = (Personel)T2;//Unboxing
+
+            Ogrenci O1 = new Ogrenci();
+            T2 = O1; // Ogrenci nesnesini TemelTip nesnesine atadık.
+
+            O1 = (Ogrenci)T2; //Unboxing
+
+            object O3 = T2;
+
+
             Console.ReadKey();
         }
     }
